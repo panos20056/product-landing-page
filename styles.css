@@ -1,10 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600&display=swap');
+
+
 :root {
-    --darkest-color: #1f2937; /* body bg, info header & quote  text */
+    --dark-color: #1f2937; /* body bg, info header & quote  text */
     --text-color01: #f9faf8; /* header and logo */
     --dark-gray: #e5e7eb; /* nav bar and hero secondary, quote section bg */
     --light-blue: #3882f6 /* call to action bg, button, pic border */
 }
 
+
+/*             
+
+
+
+
+*/
 
 *{
     margin: 0;
@@ -15,17 +25,185 @@
 
 body {
     min-height: calc(100vh - 0.1px);
-    width: 100%; 
-    max-width: 1000px;
+    width: 100%;
+    font-size:14px;
+    background-color: #060606;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
     margin-inline: auto;
 }
+
+
+.navbar, 
+#intro {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0;
+    align-items: center;
+}
+
+header, #intro {
+    background-color: var(--dark-color);
+    color: var(--text-color01);
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+
+
+.navlist {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    justify-content: space-between;
+    align-items: center; 
+    margin-left: 20px;
+}
+
+
+
+
+li a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    margin-left: 0.5rem;
+    text-align: center;
+}
+
+
+.logo {
+    width: 160px;
+    height: 30px;
+}
+
+.hero-title, .hero-sub {
+    max-width: 350px;
+    margin-bottom: 0.5rem;
+}
+
+
+.sub {
+    color: #6b6b6b;
+    line-height: 1.25rem;
+}
+
+
+
+.hero-title {
+    font-weight: 800;
+    color: var(--text-color01);
+    font-size: 1.75rem;
+}
+
+
+.btn {
+    background-color: var(--light-blue);
+    padding: 0.3rem 1.45rem;
+    font-weight: 700;
+    color: var(--text-color01);
+    border: 0;
+    border-radius: .4rem;
+}
+
+
+.btn:hover {
+    cursor: pointer;
+}
+
+
+.intro-img {
+    max-width: 300px;
+}
+
+
 
 .info-img {
     width: 100px;
     height: 100px;
+    border-radius: 0.4rem;
+    border: 2px solid var(--light-blue);
 }
+
+
+#info {
+    background-color: aliceblue;
+}
+
+.info-title {
+    text-align: center;
+    font-weight: 700;
+    padding: 2rem;
+}
+
+.figures {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+    width: 70%;
+    margin-inline: auto;
+    gap: 0.2rem;
+}
+
 
 figcaption {
     max-width: 100px;
     text-align: center;
+}
+
+
+.quotes {
+    background-color:#e0e4f0;
+    padding: 5rem 10rem;
+}
+
+blockquote {
+    font-size: 1.35rem;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.5rem;
+}
+
+.citation {
+    text-align: right;
+    margin-right: 2rem;
+    font-weight: 700;
+}
+
+.sign-up {
+    background-color: var(--text-color01);
+    padding: 5rem 7rem;
+}
+
+.blue-box {
+    background-color: var(--light-blue);
+    border-radius: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2.5rem;
+}
+
+.blue-box h4, .blue-box p {
+    color: var(--text-color01);
+}
+
+
+.btn-bot {
+    border: 2px solid var(--text-color01);
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--text-color01);
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
 }
