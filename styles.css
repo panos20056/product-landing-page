@@ -201,10 +201,10 @@ blockquote {
 }
 
 footer {
-    background-color: var(--dark-color);
     color: var(--text-color01);
     text-align: center;
     width: 100%;
     max-width: 900px;
     margin-inline: auto;
+    margin-top: 1rem;
 }
