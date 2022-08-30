@@ -1,0 +1,31 @@
+:root {
+    --darkest-color: #1f2937; /* body bg, info header & quote  text */
+    --text-color01: #f9faf8; /* header and logo */
+    --dark-gray: #e5e7eb; /* nav bar and hero secondary, quote section bg */
+    --light-blue: #3882f6 /* call to action bg, button, pic border */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: calc(100vh - 0.1px);
+    width: 100%; 
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+.info-img {
+    width: 100px;
+    height: 100px;
+}
+
+figcaption {
+    max-width: 100px;
+    text-align: center;
+}
